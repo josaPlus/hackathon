@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSCAR</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <head>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">OSCAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#pagina1-contenedor">Directores</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <!-- carousel-->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img style="width: 1536px; height: 500px;"
+          src="https://sprinforma.mx/upload/182a1764448849f28ef5f20bc4305a91.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img style="width: 1536px; height: 500px;"
+          src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/01/13/16420830054305.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img style="width: 1536px; height: 500px;"
+          src="https://cnnespanol.cnn.com/wp-content/uploads/2023/03/estatuilla-premios-oscar.jpg?quality=100&strip=info"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h1 style="color: white;">Directores</h1>
+
+  <!-- card-->
+  <div id="#pagina1-contenedor">
+    <div class="container1">
+      <div class="grid-item">
+        <label id="summary">
+          <input type="checkbox" />
+          <div class="article">
+            <div class="front">
+              <div class="header">
+
+              </div>
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="encerado">
+              <h4>Cristopher Nolan</h4>
+            </div>
+            <div class="back">
+              <div class="header">
+                <h4>Descripción</h4>
+              </div>
+              <div class="p">
+                <p>Al alzarse con el DGA a mejor dirección, la carrera por el Oscar en esta categoría se cerró. Los DGA
+                  llevan entregándose 75 años y en 67 ocasiones han premiado al que, a la postre, se haría con el Oscar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="grid-item">
+        <label id="summary">
+          <input type="checkbox" />
+          <div class="article">
+            <div class="front">
+              <div class="header">
+
+              </div>
+              <img
+                src="https://imagenes.20minutos.es/files/image_640_auto/uploads/imagenes/2024/01/08/martin-scorsese-en-los-globos-de-oro-2024.jpeg"
+                alt="encerado">
+              <h4>Martin Scorsese</h4>
+            </div>
+            <div class="back">
+              <div class="header">
+                <h4>Descripción</h4>
+              </div>
+              <div class="p">
+                <p>Con su última nominación, Scorsese se coloca inmediatamente tras William Wyler en la fila de los
+                  directores más nominados de la historia.</p>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="grid-item">
+        <label id="summary">
+          <input type="checkbox" />
+          <div class="article">
+            <div class="front">
+              <div class="header">
+
+              </div>
+              <img
+                src="https://imagenes.20minutos.es/files/image_640_auto/uploads/imagenes/2023/11/07/anatomia-de-una-caida.jpeg"
+                alt="encerado">
+              <h4>Justine Triet</h4>
+            </div>
+            <div class="back">
+              <div class="header">
+                <h4>Descripción</h4>
+              </div>
+              <div class="p">
+                <p>Una de las sorpresas del año desde que Cannes le otorgase su valorada Palma de Oro. Anatomía de una caída ha ganado el Globo de Oro a mejor película internacional y mejor guion</p>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="grid-item">
+        <label id="summary">
+          <input type="checkbox" />
+          <div class="article">
+            <div class="front">
+              <div class="header">
+
+              </div>
+              <img
+                src="https://imagenes.20minutos.es/files/image_640_auto/uploads/imagenes/2024/01/15/la-zona-de-interes-2023.jpeg"
+                alt="encerado">
+              <h4>JJonathan Glazer</h4>
+            </div>
+            <div class="back">
+              <div class="header">
+                <h4>Descripción</h4>
+              </div>
+              <div class="p">
+                <p>Una carrera similar precede a Jonathan Glazer que, eso sí, ha firmado decenas de cortometrajes. </p>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="grid-item">
+        <label id="summary">
+          <input type="checkbox" />
+          <div class="article">
+            <div class="front">
+              <div class="header">
+
+              </div>
+              <img
+                src="https://imagenes.20minutos.es/files/image_640_auto/uploads/imagenes/2024/02/13/emma-stone-con-yorgos-lanthimos.jpeg"
+                alt="encerado">
+              <h4>Yorgos Lanthimos</h4>
+            </div>
+            <div class="back">
+              <div class="header">
+                <h4>Descripción</h4>
+              </div>
+              <div class="p">
+                <p>A Yorgos Lanthimos le gusta tanto un ojo de pez como a la Academia le gusta Lanthimos.</p>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="grid-item">
+        <label id="summary">
+          <input type="checkbox" />
+          <div class="article">
+            <div class="front">
+              <div class="header">
+
+              </div>
+              <img
+                src="https://media-1.carnegiecouncil.org/cceia/_1000x700_crop_center-center_none/409940/Oppeheimer-feature-image.jpg"
+                alt="encerado">
+              <h4>Oppenheimer</h4>
+            </div>
+            <div class="back">
+              <div class="header">
+                <h4>Descripción</h4>
+              </div>
+              <div class="p">
+                <p>Oppenheimer es una película biográfica de suspenso de 2023, escrita y dirigida por Christopher Nolan.
+                  Fue producida por Nolan junto a Charles Roven y Emma Thomas. Basada en American Prometheus, una
+                  biografía de 2005 escrita por Kai Bird y Martin J. Sherwin</p>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="scrip.js"></script>
+</body>
+
+</html>
